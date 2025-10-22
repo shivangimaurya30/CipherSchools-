@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}));
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://cipher-schools-seven.vercel.app/'
+  'https://cipher-schools-seven.vercel.app'
 ];
 
 app.use(cors({
@@ -50,3 +50,4 @@ app.use((req, res) => {
 
 
 export { app };
+
