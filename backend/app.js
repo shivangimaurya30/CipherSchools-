@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: true}));
 
 const allowedOrigins = [
   'http://localhost:5173',
+  'https://cipher-schools-seven.vercel.app/'
 ];
 
 app.use(cors({
@@ -46,5 +47,6 @@ app.use((err, req, res, next) => {
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
+
 
 export { app };
